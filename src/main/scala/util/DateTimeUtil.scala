@@ -15,7 +15,8 @@ object DateTimeUtil {
 
   /*
    * Compares two time with inclusive start and end
-   */ def compareTimeRangeInclusive(time: LocalTime, rangeFrom: LocalTime, rangeTo: LocalTime) =
+   */
+  def compareTimeRangeInclusive(time: LocalTime, rangeFrom: LocalTime, rangeTo: LocalTime) =
     (time.compareTo(rangeFrom) == 0 || time.isAfter(rangeFrom)) &&
       (time.compareTo(rangeTo) == 0 || time.isBefore(rangeTo))
 
