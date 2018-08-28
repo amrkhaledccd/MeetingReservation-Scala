@@ -1,8 +1,8 @@
 package model
 
 import java.time.{LocalDateTime, LocalTime}
-
 import util.DateTimeUtil
+
 
 case class OfficeHours(from: LocalTime, to: LocalTime)
 
